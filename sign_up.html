@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ahmed</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="main" >
+            <h2>sign up</h2>
+            <form method="post" autocomplete="on">
+                <div class="input">
+                    <input  type="text" maxlength="10" minlength="3" required placeholder="first-name" id="fn">
+                    <label for="fn">first-name</label>
+                </div>
+                <div class="input">
+                    <input type="text" maxlength="10" minlength="3" required  placeholder="last-name" id="ln">
+                    <label for="ln">last-name</label>                    
+                </div>
+                <div class="input">
+                    <input type="email" maxlength="40" minlength="5" required placeholder="email" id="email">
+                    <label for="email">email</label>        
+                </div>
+                <div class="input">
+                    <input type="password" required placeholder="password" id="pass" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}" title="The password must contain at least one uppercase letter, one lowercase letter, one number, and one special character, and be at least 8 characters long.">
+                    <label for="pass">password</label>        
+                </div>
+                <div class="input">
+                    <input type="password" required placeholder="re-password" id="r-pass">
+                    <label for="r-pass">re-password</label>            
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>
